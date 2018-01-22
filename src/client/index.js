@@ -4,8 +4,6 @@ import { App } from 'containers/App';
 import { AppContainer } from 'react-hot-loader';
 
 import 'normalize-css';
-import styled from 'styled-components';
-import 'containers/App.scss';
 
 const render = Component => {
     ReactDOM.render(
