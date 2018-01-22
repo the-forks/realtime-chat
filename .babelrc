@@ -1,0 +1,11 @@
+{
+    "plugins": [
+        "transform-decorators-legacy",
+        "transform-object-rest-spread",
+        "react-hot-loader/babel"
+    ],
+    "presets": [
+        "react",
+        "env"
+    ]
+}

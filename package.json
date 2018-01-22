@@ -1,0 +1,49 @@
+{
+  "name": "nodechat-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node index.js",
+    "client": "cross-env NODE_ENV=production webpack --progress --optimize-minimize --p --define process.env.NODE_ENV=\"'production'\"",
+    "start": "cross-env NODE_ENV=production npm run client | npm run server",
+    "postinstall": "npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.17.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "cors": "^2.8.4",
+    "css-loader": "^0.28.9",
+    "express": "^4.16.2",
+    "file-loader": "^1.1.6",
+    "http": "0.0.0",
+    "node-sass": "^4.7.2",
+    "normalize-css": "^2.3.1",
+    "react-hot-loader": "^3.1.3",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-promise-middleware": "^5.0.0",
+    "sass-loader": "^6.0.6",
+    "socket.io": "^2.0.4",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^2.4.0",
+    "webpack": "^3.10.0"
+  }
+}
